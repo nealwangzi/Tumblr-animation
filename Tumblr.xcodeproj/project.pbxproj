@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0824CAEF1F14CA81009DC887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824CAEE1F14CA81009DC887 /* AppDelegate.swift */; };
-		0824CAF11F14CA81009DC887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0824CAF01F14CA81009DC887 /* ViewController.swift */; };
 		0824CAF41F14CA81009DC887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0824CAF21F14CA81009DC887 /* Main.storyboard */; };
 		0824CAF61F14CA81009DC887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0824CAF51F14CA81009DC887 /* Assets.xcassets */; };
 		0824CAF91F14CA81009DC887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0824CAF71F14CA81009DC887 /* LaunchScreen.storyboard */; };
+		084217391F1752B9002AF12A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084217381F1752B9002AF12A /* MainViewController.swift */; };
+		0842173B1F1752C8002AF12A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842173A1F1752C8002AF12A /* MenuViewController.swift */; };
+		0842173D1F1752E2002AF12A /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0842173C1F1752E2002AF12A /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0824CAEB1F14CA81009DC887 /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0824CAEE1F14CA81009DC887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0824CAF01F14CA81009DC887 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0824CAF31F14CA81009DC887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0824CAF51F14CA81009DC887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0824CAF81F14CA81009DC887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0824CAFA1F14CA81009DC887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084217381F1752B9002AF12A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		0842173A1F1752C8002AF12A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0842173C1F1752E2002AF12A /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		0824CAED1F14CA81009DC887 /* Tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				084217381F1752B9002AF12A /* MainViewController.swift */,
 				0824CAEE1F14CA81009DC887 /* AppDelegate.swift */,
-				0824CAF01F14CA81009DC887 /* ViewController.swift */,
 				0824CAF21F14CA81009DC887 /* Main.storyboard */,
 				0824CAF51F14CA81009DC887 /* Assets.xcassets */,
 				0824CAF71F14CA81009DC887 /* LaunchScreen.storyboard */,
 				0824CAFA1F14CA81009DC887 /* Info.plist */,
+				0842173A1F1752C8002AF12A /* MenuViewController.swift */,
+				0842173C1F1752E2002AF12A /* TransitionManager.swift */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0824CAF11F14CA81009DC887 /* ViewController.swift in Sources */,
+				084217391F1752B9002AF12A /* MainViewController.swift in Sources */,
+				0842173D1F1752E2002AF12A /* TransitionManager.swift in Sources */,
 				0824CAEF1F14CA81009DC887 /* AppDelegate.swift in Sources */,
+				0842173B1F1752C8002AF12A /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				0824CAFF1F14CA81009DC887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
